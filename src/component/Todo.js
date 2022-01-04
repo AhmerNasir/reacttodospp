@@ -82,10 +82,12 @@ const deleteAll =()=>{
                 <figcaption>Add your List Here</figcaption>
             </figure>
             <div className='addItems'>
-                <input type="text" placeholder='😍 Add items' value={InputData} onChange={(e) => setInputData(e.target.value)}/>
+                <input type="text" placeholder='😍 Add items' value={InputData} 
+                onChange={(e) => setInputData(e.target.value)}/>
 
                 {
-                    toggleBtn ? <i class="fa fa-plus add-btn" aria-hidden="true" title='Add Item' onClick={addItem}></i>:
+                    toggleBtn ? <i class="fa fa-plus add-btn" aria-hidden="true" title='Add Item'
+                     onClick={addItem}></i>:
                     <i class="fa fa-edit add-btn" aria-hidden="true" title='Update Item' onClick={addItem}></i>
                 }
                 
